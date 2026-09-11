@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Uncomment these types if you want even more clean repository. But be careful.
 # It can make harm to an existing project source. Read explanations below.
 #
@@ -80,3 +81,45 @@ __recovery/
 
 # Boss dependency manager vendor folder https://github.com/HashLoad/boss
 modules/
+||||||| (empty tree)
+=======
+# Local user settings and desktop layouts
+*.dsk
+*.identcache
+*.local
+*.projdata
+*.tvsconfig
+
+# Compiled units and binaries
+*.dcu
+*.exe
+*.dll
+*.bpl
+*.bpi
+*.dcp
+*.drc
+*.map
+*.rsm
+*.tds
+*.elf
+
+# History and recovery directories
+__history/
+__recovery/
+
+# Platform-specific build folders
+Win32/
+Win64/
+Android/
+iOSDevice32/
+iOSDevice64/
+iOSSimulator/
+OSX32/
+OSX64/
+Linux64/
+
+# Auto-generated deployment and project files
+*.deployproj
+*.stat
+*.otares
+>>>>>>> f9d9fe4 (Initial Delphi GUI commit)

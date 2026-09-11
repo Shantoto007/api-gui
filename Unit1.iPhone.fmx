@@ -1,0 +1,29 @@
+inherited Form1_iPhone: TForm1_iPhone
+  ClientHeight = 460
+  ClientWidth = 320
+  DesignerMasterStyle = 0
+  inherited PrincipalLayout: TFlowLayout
+    Size.Width = 320.000000000000000000
+    Size.Height = 460.000000000000000000
+    inherited Display: TEdit
+      Size.Height = 30.000000000000000000
+    end
+    inherited MemoryButtonsGrid: TGridLayout
+      Position.Y = 33.000000000000000000
+    end
+    inherited ManageInputDataButton: TFlowLayout
+      Position.Y = 66.000000000000000000
+    end
+    inherited RegularOperationsButtons: TFlowLayout
+      Position.Y = 99.000000000000000000
+    end
+    inherited DigitsButtons: TFlowLayout
+      Position.X = 60.000000000000000000
+      Position.Y = 132.000000000000000000
+    end
+    inherited GridLayout1: TGridLayout
+      Position.X = 210.000000000000000000
+      Position.Y = 132.000000000000000000
+    end
+  end
+end

@@ -1,0 +1,289 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 258
+  ClientWidth = 200
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object PrincipalLayout: TFlowLayout
+    Align = Client
+    Size.Width = 200.000000000000000000
+    Size.Height = 258.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Justify = Left
+    JustifyLastLine = Center
+    FlowDirection = LeftToRight
+    VerticalGap = 3.000000000000000000
+    object Display: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 0
+      Size.Width = 200.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object MemoryButtonsGrid: TGridLayout
+      ItemHeight = 30.000000000000000000
+      ItemWidth = 50.000000000000000000
+      Orientation = Horizontal
+      Position.Y = 35.000000000000000000
+      Size.Width = 200.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object MemoryBtn0: TButton
+        Size.Width = 50.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'MC'
+      end
+      object MemoryBtn1: TButton
+        Position.X = 50.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'MR'
+      end
+      object MemoryBtn2: TButton
+        Position.X = 100.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = 'M+'
+      end
+      object MemoryBtn3: TButton
+        Position.X = 150.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = 'M-'
+      end
+    end
+    object ManageInputDataButton: TFlowLayout
+      Position.Y = 68.000000000000000000
+      Size.Width = 200.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Justify = Left
+      JustifyLastLine = Center
+      FlowDirection = LeftToRight
+      object Button1: TButton
+        Size.Width = 100.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Backspace'
+      end
+      object Button2: TButton
+        Position.X = 100.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'CE'
+      end
+      object Button3: TButton
+        Position.X = 150.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = 'C'
+      end
+    end
+    object RegularOperationsButtons: TFlowLayout
+      Position.Y = 101.000000000000000000
+      Size.Width = 200.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Justify = Center
+      JustifyLastLine = Center
+      FlowDirection = LeftToRight
+      object Button4: TButton
+        Size.Width = 50.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = '+/-'
+      end
+      object Button5: TButton
+        Position.X = 50.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = '/'
+      end
+      object Button6: TButton
+        Position.X = 100.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = '*'
+      end
+      object Button7: TButton
+        Position.X = 150.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = '-'
+      end
+    end
+    object DigitsButtons: TFlowLayout
+      Position.Y = 134.000000000000000000
+      Size.Width = 150.000000000000000000
+      Size.Height = 120.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      Justify = Center
+      JustifyLastLine = Center
+      FlowDirection = LeftToRight
+      object RegularDigitsButtons: TGridLayout
+        ItemHeight = 30.000000000000000000
+        ItemWidth = 50.000000000000000000
+        Orientation = Horizontal
+        Size.Width = 150.000000000000000000
+        Size.Height = 90.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Button8: TButton
+          Size.Width = 50.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = '7'
+        end
+        object Button9: TButton
+          Position.X = 50.000000000000000000
+          Size.Width = 50.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Text = '8'
+        end
+        object Button10: TButton
+          Position.X = 100.000000000000000000
+          Size.Width = 50.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          Text = '9'
+        end
+        object Button11: TButton
+          Position.Y = 30.000000000000000000
+          Size.Width = 50.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          Text = '4'
+        end
+        object Button12: TButton
+          Position.X = 50.000000000000000000
+          Position.Y = 30.000000000000000000
+          Size.Width = 50.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+          Text = '5'
+        end
+        object Button13: TButton
+          Position.X = 100.000000000000000000
+          Position.Y = 30.000000000000000000
+          Size.Width = 50.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 5
+          Text = '6'
+        end
+        object Button14: TButton
+          Position.Y = 60.000000000000000000
+          Size.Width = 50.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 6
+          Text = '1'
+        end
+        object Button15: TButton
+          Position.X = 50.000000000000000000
+          Position.Y = 60.000000000000000000
+          Size.Width = 50.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 7
+          Text = '2'
+        end
+        object Button16: TButton
+          Position.X = 100.000000000000000000
+          Position.Y = 60.000000000000000000
+          Size.Width = 50.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 8
+          Text = '3'
+        end
+      end
+      object SpecialDigitsButtons: TFlowLayout
+        Position.Y = 90.000000000000000000
+        Size.Width = 150.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Justify = Left
+        JustifyLastLine = Left
+        FlowDirection = LeftToRight
+        object Button17: TButton
+          Size.Width = 100.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = '0'
+        end
+        object Button18: TButton
+          Position.X = 100.000000000000000000
+          Size.Width = 50.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Text = '.'
+        end
+      end
+    end
+    object GridLayout1: TGridLayout
+      ItemHeight = 60.000000000000000000
+      ItemWidth = 50.000000000000000000
+      Orientation = Horizontal
+      Position.X = 150.000000000000000000
+      Position.Y = 134.000000000000000000
+      Size.Width = 50.000000000000000000
+      Size.Height = 120.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+      object Button19: TButton
+        Size.Width = 50.000000000000000000
+        Size.Height = 60.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = '+'
+      end
+      object Button20: TButton
+        Position.Y = 60.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 60.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = '-'
+      end
+    end
+  end
+end

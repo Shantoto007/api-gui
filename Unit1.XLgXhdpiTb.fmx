@@ -1,0 +1,26 @@
+inherited Form1_XLgXhdpiTb: TForm1_XLgXhdpiTb
+  ClientHeight = 1255
+  ClientWidth = 800
+  DesignerMasterStyle = 0
+  inherited PrincipalLayout: TFlowLayout
+    Size.Width = 800.000000000000000000
+    Size.Height = 1255.000000000000000000
+    inherited MemoryButtonsGrid: TGridLayout
+      Position.X = 200.000000000000000000
+    end
+    inherited ManageInputDataButton: TFlowLayout
+      Position.X = 400.000000000000000000
+    end
+    inherited RegularOperationsButtons: TFlowLayout
+      Position.X = 600.000000000000000000
+    end
+    inherited DigitsButtons: TFlowLayout
+      Position.X = 300.000000000000000000
+      Position.Y = 35.000000000000000000
+    end
+    inherited GridLayout1: TGridLayout
+      Position.X = 450.000000000000000000
+      Position.Y = 35.000000000000000000
+    end
+  end
+end
