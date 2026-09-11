@@ -2,16 +2,16 @@ object Form1: TForm1
   Left = 0
   Top = 0
   Caption = 'Form1'
-  ClientHeight = 258
-  ClientWidth = 200
+  ClientHeight = 254
+  ClientWidth = 201
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   DesignerMasterStyle = 0
   object PrincipalLayout: TFlowLayout
     Align = Client
-    Size.Width = 200.000000000000000000
-    Size.Height = 258.000000000000000000
+    Size.Width = 201.000000000000000000
+    Size.Height = 254.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 0
     Justify = Left
@@ -20,54 +20,60 @@ object Form1: TForm1
     VerticalGap = 3.000000000000000000
     object Display: TEdit
       Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Client
       TabOrder = 0
       Size.Width = 200.000000000000000000
-      Size.Height = 32.000000000000000000
+      Size.Height = 30.000000000000000000
       Size.PlatformDefault = False
     end
     object MemoryButtonsGrid: TGridLayout
+      Align = Client
       ItemHeight = 30.000000000000000000
       ItemWidth = 50.000000000000000000
       Orientation = Horizontal
-      Position.Y = 35.000000000000000000
       Size.Width = 200.000000000000000000
       Size.Height = 30.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 1
       object MemoryBtn0: TButton
+        Align = Client
         Size.Width = 50.000000000000000000
         Size.Height = 30.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
         Text = 'MC'
+        OnClick = MemoryBtnClick
       end
       object MemoryBtn1: TButton
-        Position.X = 50.000000000000000000
+        Align = Client
         Size.Width = 50.000000000000000000
         Size.Height = 30.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 1
         Text = 'MR'
+        OnClick = MemoryBtnClick
       end
       object MemoryBtn2: TButton
-        Position.X = 100.000000000000000000
+        Align = Client
         Size.Width = 50.000000000000000000
         Size.Height = 30.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 2
         Text = 'M+'
+        OnClick = MemoryBtnClick
       end
       object MemoryBtn3: TButton
-        Position.X = 150.000000000000000000
+        Align = Client
         Size.Width = 50.000000000000000000
         Size.Height = 30.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 3
         Text = 'M-'
+        OnClick = MemoryBtnClick
       end
     end
     object ManageInputDataButton: TFlowLayout
-      Position.Y = 68.000000000000000000
+      Align = Client
       Size.Width = 200.000000000000000000
       Size.Height = 30.000000000000000000
       Size.PlatformDefault = False
@@ -75,32 +81,36 @@ object Form1: TForm1
       Justify = Left
       JustifyLastLine = Center
       FlowDirection = LeftToRight
-      object Button1: TButton
+      object BtnBackspace: TButton
+        Align = Client
         Size.Width = 100.000000000000000000
         Size.Height = 30.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
         Text = 'Backspace'
+        OnClick = BtnBackspaceClick
       end
-      object Button2: TButton
-        Position.X = 100.000000000000000000
+      object BtnClearEntry: TButton
+        Align = Client
         Size.Width = 50.000000000000000000
         Size.Height = 30.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 1
         Text = 'CE'
+        OnClick = BtnClearEntryClick
       end
-      object Button3: TButton
-        Position.X = 150.000000000000000000
+      object BtnClear: TButton
+        Align = Client
         Size.Width = 50.000000000000000000
         Size.Height = 30.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 2
         Text = 'C'
+        OnClick = BtnClearClick
       end
     end
     object RegularOperationsButtons: TFlowLayout
-      Position.Y = 101.000000000000000000
+      Align = Client
       Size.Width = 200.000000000000000000
       Size.Height = 30.000000000000000000
       Size.PlatformDefault = False
@@ -108,48 +118,54 @@ object Form1: TForm1
       Justify = Center
       JustifyLastLine = Center
       FlowDirection = LeftToRight
-      object Button4: TButton
+      object BtnNegative: TButton
+        Align = Client
         Size.Width = 50.000000000000000000
         Size.Height = 30.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
         Text = '+/-'
+        OnClick = BtnNegativeClick
       end
-      object Button5: TButton
-        Position.X = 50.000000000000000000
+      object BtnDivide: TButton
+        Align = Client
         Size.Width = 50.000000000000000000
         Size.Height = 30.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 1
         Text = '/'
+        OnClick = BtnOpClick
       end
-      object Button6: TButton
-        Position.X = 100.000000000000000000
+      object BtnMultiply: TButton
+        Align = Client
         Size.Width = 50.000000000000000000
         Size.Height = 30.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 2
         Text = '*'
+        OnClick = BtnOpClick
       end
-      object Button7: TButton
-        Position.X = 150.000000000000000000
+      object BtnMinus: TButton
+        Align = Client
         Size.Width = 50.000000000000000000
         Size.Height = 30.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 3
         Text = '-'
+        OnClick = BtnOpClick
       end
     end
     object DigitsButtons: TFlowLayout
-      Position.Y = 134.000000000000000000
+      Align = Client
       Size.Width = 150.000000000000000000
       Size.Height = 120.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 4
-      Justify = Center
+      Justify = Left
       JustifyLastLine = Center
       FlowDirection = LeftToRight
       object RegularDigitsButtons: TGridLayout
+        Align = Client
         ItemHeight = 30.000000000000000000
         ItemWidth = 50.000000000000000000
         Orientation = Horizontal
@@ -157,84 +173,90 @@ object Form1: TForm1
         Size.Height = 90.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
-        object Button8: TButton
+        object Btn7: TButton
+          Align = Client
           Size.Width = 50.000000000000000000
           Size.Height = 30.000000000000000000
           Size.PlatformDefault = False
           TabOrder = 0
           Text = '7'
+          OnClick = BtnDigitClick
         end
-        object Button9: TButton
-          Position.X = 50.000000000000000000
+        object Btn8: TButton
+          Align = Client
           Size.Width = 50.000000000000000000
           Size.Height = 30.000000000000000000
           Size.PlatformDefault = False
           TabOrder = 1
           Text = '8'
+          OnClick = BtnDigitClick
         end
-        object Button10: TButton
-          Position.X = 100.000000000000000000
+        object Btn9: TButton
+          Align = Client
           Size.Width = 50.000000000000000000
           Size.Height = 30.000000000000000000
           Size.PlatformDefault = False
           TabOrder = 2
           Text = '9'
+          OnClick = BtnDigitClick
         end
-        object Button11: TButton
-          Position.Y = 30.000000000000000000
+        object Btn4: TButton
+          Align = Client
           Size.Width = 50.000000000000000000
           Size.Height = 30.000000000000000000
           Size.PlatformDefault = False
           TabOrder = 3
           Text = '4'
+          OnClick = BtnDigitClick
         end
-        object Button12: TButton
-          Position.X = 50.000000000000000000
-          Position.Y = 30.000000000000000000
+        object Btn5: TButton
+          Align = Client
           Size.Width = 50.000000000000000000
           Size.Height = 30.000000000000000000
           Size.PlatformDefault = False
           TabOrder = 4
           Text = '5'
+          OnClick = BtnDigitClick
         end
-        object Button13: TButton
-          Position.X = 100.000000000000000000
-          Position.Y = 30.000000000000000000
+        object Btn6: TButton
+          Align = Client
           Size.Width = 50.000000000000000000
           Size.Height = 30.000000000000000000
           Size.PlatformDefault = False
           TabOrder = 5
           Text = '6'
+          OnClick = BtnDigitClick
         end
-        object Button14: TButton
-          Position.Y = 60.000000000000000000
+        object Btn1: TButton
+          Align = Client
           Size.Width = 50.000000000000000000
           Size.Height = 30.000000000000000000
           Size.PlatformDefault = False
           TabOrder = 6
           Text = '1'
+          OnClick = BtnDigitClick
         end
-        object Button15: TButton
-          Position.X = 50.000000000000000000
-          Position.Y = 60.000000000000000000
+        object Btn2: TButton
+          Align = Client
           Size.Width = 50.000000000000000000
           Size.Height = 30.000000000000000000
           Size.PlatformDefault = False
           TabOrder = 7
           Text = '2'
+          OnClick = BtnDigitClick
         end
-        object Button16: TButton
-          Position.X = 100.000000000000000000
-          Position.Y = 60.000000000000000000
+        object Btn3: TButton
+          Align = Client
           Size.Width = 50.000000000000000000
           Size.Height = 30.000000000000000000
           Size.PlatformDefault = False
           TabOrder = 8
           Text = '3'
+          OnClick = BtnDigitClick
         end
       end
       object SpecialDigitsButtons: TFlowLayout
-        Position.Y = 90.000000000000000000
+        Align = Client
         Size.Width = 150.000000000000000000
         Size.Height = 50.000000000000000000
         Size.PlatformDefault = False
@@ -242,47 +264,52 @@ object Form1: TForm1
         Justify = Left
         JustifyLastLine = Left
         FlowDirection = LeftToRight
-        object Button17: TButton
+        object Btn0: TButton
+          Align = Client
           Size.Width = 100.000000000000000000
           Size.Height = 30.000000000000000000
           Size.PlatformDefault = False
           TabOrder = 0
           Text = '0'
+          OnClick = BtnDigitClick
         end
-        object Button18: TButton
-          Position.X = 100.000000000000000000
+        object Btndot: TButton
+          Align = Client
           Size.Width = 50.000000000000000000
           Size.Height = 30.000000000000000000
           Size.PlatformDefault = False
           TabOrder = 1
           Text = '.'
+          OnClick = BtndotClick
         end
       end
     end
     object GridLayout1: TGridLayout
+      Align = Client
       ItemHeight = 60.000000000000000000
       ItemWidth = 50.000000000000000000
       Orientation = Horizontal
-      Position.X = 150.000000000000000000
-      Position.Y = 134.000000000000000000
       Size.Width = 50.000000000000000000
       Size.Height = 120.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 5
-      object Button19: TButton
+      object BtnPlus: TButton
+        Align = Client
         Size.Width = 50.000000000000000000
         Size.Height = 60.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
         Text = '+'
+        OnClick = BtnOpClick
       end
-      object Button20: TButton
-        Position.Y = 60.000000000000000000
+      object BtnEqual: TButton
+        Align = Client
         Size.Width = 50.000000000000000000
         Size.Height = 60.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 1
-        Text = '-'
+        Text = '='
+        OnClick = BtnEqualClick
       end
     end
   end
