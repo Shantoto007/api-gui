@@ -5,26 +5,5 @@ inherited Form1_iPad: TForm1_iPad
   inherited PrincipalLayout: TFlowLayout
     Size.Width = 768.000000000000000000
     Size.Height = 1004.000000000000000000
-    inherited Display: TEdit
-      Size.Height = 30.000000000000000000
-    end
-    inherited MemoryButtonsGrid: TGridLayout
-      Position.X = 200.000000000000000000
-    end
-    inherited ManageInputDataButton: TFlowLayout
-      Position.X = 400.000000000000000000
-    end
-    inherited RegularOperationsButtons: TFlowLayout
-      Position.X = 184.000000000000000000
-      Position.Y = 33.000000000000000000
-    end
-    inherited DigitsButtons: TFlowLayout
-      Position.X = 384.000000000000000000
-      Position.Y = 33.000000000000000000
-    end
-    inherited GridLayout1: TGridLayout
-      Position.X = 534.000000000000000000
-      Position.Y = 33.000000000000000000
-    end
   end
 end

@@ -5,23 +5,5 @@ inherited Form1_GGlass: TForm1_GGlass
   inherited PrincipalLayout: TFlowLayout
     Size.Width = 427.000000000000000000
     Size.Height = 215.000000000000000000
-    inherited MemoryButtonsGrid: TGridLayout
-      Position.X = 200.000000000000000000
-    end
-    inherited ManageInputDataButton: TFlowLayout
-      Position.Y = 35.000000000000000000
-    end
-    inherited RegularOperationsButtons: TFlowLayout
-      Position.X = 200.000000000000000000
-      Position.Y = 35.000000000000000000
-    end
-    inherited DigitsButtons: TFlowLayout
-      Position.X = 113.500000000000000000
-      Position.Y = 68.000000000000000000
-    end
-    inherited GridLayout1: TGridLayout
-      Position.X = 263.500000000000000000
-      Position.Y = 68.000000000000000000
-    end
   end
 end
